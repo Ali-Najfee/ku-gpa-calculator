@@ -1,6 +1,5 @@
 /* General Reset */
 * {
-    font-size: 1.2rem;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -179,6 +178,13 @@ tr:nth-child(even) {
 
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
+    #gpa-section {
+        padding: 7px;
+        
+    }
+    th,
+    td {
+        padding: 3px;    }
     h1 {
         font-size: 2em;
     }
