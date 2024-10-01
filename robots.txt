@@ -1,0 +1,12 @@
+# Allow all bots except for specific directories
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /private/
+Disallow: /admin/
+
+# Allow only Googlebot to access the /special-folder/
+User-agent: Googlebot
+Allow: /special-folder/
+
+# Link to the sitemap
+Sitemap: https://www.example.com/sitemap.xml

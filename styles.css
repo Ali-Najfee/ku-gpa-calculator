@@ -1,0 +1,217 @@
+/* General Reset */
+* {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header Styling */
+h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Instructions Styling */
+h3 {
+    color: #34495e;
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+/* Form Section */
+#subjectCountForm,
+#marksForm {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: inline-block;
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+/* Styles for the semester label */
+#marksForm label[for="semester"] {
+    display: block;
+    margin: 10px 0 5px;
+    /* Space above and below the label */
+    font-weight: bold;
+    color: #333;
+    /* Dark color for the label text */
+}
+
+/* Styles for the semester input field */
+#semester {
+    width: calc(100% - 20px);
+    /* Full width minus padding */
+    padding: 10px;
+    /* Padding inside the input */
+    border: 1px solid #007BFF;
+    /* Blue border */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 16px;
+    /* Font size */
+    margin-bottom: 10px;
+    /* Space below the input */
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+    /* Subtle shadow effect */
+}
+
+#semesterDisplay {
+    font-weight: bold;
+    /* Make the text bold */
+    text-align: center;
+    /* Center align the text */
+    color: #34495e;
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+
+input[type="number"] {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #27ae60;
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+#downloadImage,
+#downloadPDF {
+    background-color: #2980b9;
+}
+
+#downloadImage:hover,
+#downloadPDF:hover {
+    background-color: #3498db;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #27ae60;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Results Section */
+#gpa-section {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#gpaResults div {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+#totalMarks,
+#overallGPA,
+#happiness {
+    font-size: 1.5em;
+    color: #27ae60;
+    margin-top: 15px;
+}
+
+
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    input[type="number"] {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    #gpaResults div {
+        font-size: 1em;
+    }
+
+    #totalMarks,
+    #overallGPA,
+    #happiness {
+        font-size: 1.2em;
+    }
+}
+
+#develop {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
